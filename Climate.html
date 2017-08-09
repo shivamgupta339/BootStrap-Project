@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>MyWeather</title>
+ <meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--Navigation Bar-->
+<div class="container">
+	<nav class="navbar navbar-inverse navbar-fixed-top menu">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">Accurate Weather</a>
+			</div>
+			<div class="collapse navbar-collapse" id="mainNav">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Maps</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cities <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Delhi</a></li>							
+							<li><a href="#">Banglore</a></li>
+							<li><a href="#">Allahabad</a></li>
+							<li><a href="#">Chennai</a></li>
+							<li><a href="#">Gujrat</a></li>
+							<li><a href="#">West Bengal</a></li>
+							<li><a href="#">Amritsar</a></li>
+							<li><a href="#">Chandigarh</a></li>
+							<li><a href="#">Haridwar</a></li>
+						</ul>
+					</li>					
+					<li><a href="#">News & Weather</a></li>
+					<li class="active"><a href="#">Climate</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-primary">Search</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+</div>
+<!--Jumbotron-->
+<div class="container">
+	<div class="jumbotron jumb" style="background: white">
+		<h2 class="text-center">Weather Forecast for this week</h2>
+		<img src="images/weather.png">
+	</div>
+
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+		<h2 class="text-center">Atmosphere Condition</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-5">
+			<div class="thumbnail">		 
+				<img src="images/cci-1.png">
+			</div>
+		</div>
+		<div class="col-md-7">
+			<h2>How Climate Change Index Works?</h2>
+			<h4><p>The Climate Change Index works like the Dow Jones Index, but instead of providing a snapshot of financial markets, it gives an annual snapshot of how the planet's complex systems - the ice, the oceans, the land surface and the atmosphere - are changing. </p>
+			</h4>
+			<h2>How is the index calculated?
+			 </h2>
+			 <h4>
+			 	The reference point is 1980 - the earliest date the index has been calculated. The annual change of each parameter (carbon dioxide, sea level, temperature, Arctic sea-ice minimum) is normalised (between 1980 and 2007).  Zero is no annual change. One hundred is the maximum-recorded annual change between 1980 and 2007. Minus one hundred is the minimum change between 1980 and 2007.
+			 </h4>
+		</div>
+	</div>
+	<!--Atmosphere Condition-->
+	<div class="row">
+		<div class="col-md-5">
+			<div class="thumbnail">		 
+				<img src="images/cci-2.png">
+			</div>
+		</div>
+		<div class="col-md-7">
+			<h2>What is CO<sub>2</sub> ?</h2>
+			<h4><p>Carbon dioxide (CO<sub>2</sub>) is an important trace gas in Earth's atmosphere. CO<sub>2</sub> is a major greenhouse gas and plays a vital role in regulating Earth's surface temperature through radiative forcing and the greenhouse effect. Carbon dioxide is an integral part of the carbon cycle, a biogeochemical cycle in which carbon is exchanged between the Earth's oceans, soil, rocks and the biosphere. Plants and other photoautotrophs use solar energy to produce carbohydrate from atmospheric carbon dioxide and water by photosynthesis. Almost all other organisms depend on carbohydrate derived from photosynthesis as their primary source of energy and carbon compounds.</p>
+			</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-5">
+			<div class="thumbnail">		 
+				<img src="images/cci-4.png">
+			</div>
+		</div>
+		<div class="col-md-7">
+			<h2>Sea level rise</h2>
+			<h4><p>A sea level rise is an increase in the volume of water in the world’s oceans, resulting in an increase in global mean sea level. Sea level rise is usually attributed to global climate change by thermal expansion of the water in the oceans and by melting of ice sheets and glaciers on land. Melting of floating ice shelves or icebergs at sea raises sea levels only slightly.</p>
+			</h4>
+			<h4><p>Sea level rise at specific locations may be more or less than the global average. Local factors might include tectonic effects, subsidence of the land, tides, currents, storms, etc.</p></h4>
+		</div>
+	</div>
+</div>
+<!--Footer-->
+<div class="container-fluid">
+	<footer >
+        <div class="text-center center-block">
+            <p>- AccurateWeather.com -</p>
+            <br/>
+            <a href="https://www.facebook.com/AccurateWeather"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+	        <a href="https://twitter.com/AccurateWeather"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+	        <a href="https://plus.google.com/+Accurate-Weather"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+	        <a href="mailto:AccurateWeather@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+	        <p>Copyright 2017</p>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>MyWeather</title>
+ <meta charset="utf-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <link rel="stylesheet" type="text/css" href="css/style1.css">
+</head>
+<body">
+<!--Navigation Bar-->
+<div class="container">
+	<nav class="navbar navbar-inverse navbar-fixed-top menu">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">Accurate Weather</a>
+			</div>
+			<div class="collapse navbar-collapse" id="mainNav">
+				<ul class="nav navbar-nav navbar-left">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Maps</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cities <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Delhi</a></li>							
+							<li><a href="#">Banglore</a></li>
+							<li><a href="#">Allahabad</a></li>
+							<li><a href="#">Chennai</a></li>
+							<li><a href="#">Gujarat</a></li>
+							<li><a href="#">West Bengal</a></li>
+							<li><a href="#">Amritsar</a></li>
+							<li><a href="#">Chandigarh</a></li>
+							<li><a href="#">Haridwar</a></li>
+						</ul>
+					</li>					
+					<li><a href="#">News & Weather</a></li>
+					<li><a href="Climate.html">Climate</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-primary">Search</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+</div>
+<!--Carousel-->
+<div class="container">
+	<div id="myCarousel" class="carousel slide mar" data-ride="carousel">
+    	<ol class="carousel-indicators">
+    	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    	<li data-target="#myCarousel" data-slide-to="1"></li>
+    	<li data-target="#myCarousel" data-slide-to="2"></li>
+  		</ol>
+		<div class="carousel-inner imgmain">
+    		<div class="item active">
+      			<img src="images/drought_location.png">
+    		</div>
+    		<div class="item ">
+      			<img src="images/les-schwab-drive-snow-graphic-1200.jpg">
+    		</div>
+			<div class="item ">
+    			<img src="images/Winter-weather-prep.jpg">
+   			</div>
+		</div>
+
+  <!-- Left and right controls -->
+  		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    		<span class="glyphicon glyphicon-chevron-left"></span>
+    		<span class="sr-only">Previous</span>
+  		</a>
+  		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+    		<span class="glyphicon glyphicon-chevron-right"></span>
+    		<span class="sr-only">Next</span>
+  		</a>
+	</div>
+</div>
+<!--Thumbnail for weather-->
+<div class="container temp">
+	<div class="thumbnail">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<img src="images/map.jpg">
+				</div>
+			</div> 
+			<div class="col-md-2 weat">
+				<img src="images/cloudy.png">
+				<h2>Delhi</h2>
+				<h4>
+					<p>23&#8451<br>Cloudy</p>
+				</h4>
+			</div>
+			<div class="col-md-2 weat">
+				<img src="images/sunny.jpg">
+				<h2>Gujarat</h2>
+				<h4>
+					<p>35&#8451<br>Sunny</p>
+				</h4>
+			</div>
+			<div class="col-md-2 weat">
+				<img src="images/snow.png">
+				<h2>Manali</h2>
+				<h4>
+					<p>4&#8451<br>Snowfall</p>
+				</h4>
+			</div>
+			<div class="col-md-2 weat">
+				<img src="images/cloud-rain-icon-2.png">
+				<h2>Bengaluru</h2>
+				<h4>
+					<p>19&#8451<br>Rain</p>
+				</h4>
+			</div>
+		</div>
+	</div>
+</div>
+<!--All cities temp-->
+<div class="container temp">
+	<div class="thumbnail">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Temperature Update</div>
+					<div class="panel-body">
+						<table class="table table-hover table-responsive">
+							<thead>
+								<tr class="alert alert-danger">
+									<th>City</th>
+									<th>Temperature(in celsius)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Agra</td>
+									<td>34</td>
+								</tr>
+								<tr>
+									<td>Ahemdabad</td>
+									<td>39</td>
+								</tr>
+								<tr>
+									<td>Amritsar</td>
+									<td>35</td>
+								</tr>
+								<tr>
+									<td>Bhopal</td>
+									<td>26</td>
+								</tr>
+								<tr>
+									<td>Chandigarh</td>
+									<td>37</td>
+								</tr>
+								<tr>
+									<td>Chennai</td>
+									<td>41</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+</div>
+<!--News-->
+<div class="container sec">
+	<div class="thumbnail">
+	<div class="row">
+		<div class="col-md-4">
+			<h3 class="text-center">NEWS 1</h3>	
+			<div class="thumbnail">
+				<img src="images/news3.jpeg">
+				<p>Wind gusts capable of causing damage and power outages, as well as dangerous flash flooding, will continue to threaten lives and property across the Yucatan Peninsula into Tuesday afternoon.</p>
+				 <p><a class="btn btn-primary btn-md" href="https://www.accuweather.com/en/weather-news/budding-atlantic-tropical-storm-to-threaten-mexico-this-week/70002388" role="button">Read more</a></p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h3 class="text-center">NEWS 2</h3>
+			<div class="thumbnail">
+				<img src="images/news2.jpeg">
+				<p>There are restrictions in place on campfires, smoking and operating equipment like chainsaws, she said.
+					Visitors are urged to do their research and be smart when spending time outdoors.</p>
+				 <p><a class="btn btn-primary btn-md" href="https://www.accuweather.com/en/weather-news/deadly-noru-to-batter-japan-with-flooding-rainfall-into-midweek/70002393" role="button">Read more</a></p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h3 class="text-center">NEWS 3</h3>
+			<div class="thumbnail">
+				<img src="images/news4.jpeg">
+				<p>Residents and visitors from Veracruz to Tampico, Mexico, should make the necessary preparations for Franklin's landfall with flooding rain, damaging winds, an inundating storm surge and mudslides.</p>
+				 <p><a class="btn btn-primary btn-md" href="https://www.accuweather.com/en/weather-news/caribbean-east-atlantic-may-spawn-tropical-threats-in-coming-days/70002376" role="button">Read more</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<h3 class="text-center">NEWS 4</h3>
+			<div class="thumbnail">
+				<img src="images/news5.png">
+				<p>A portion of Interstate 44 was closed shortly before 2 a.m. CDT Sunday after a large overhead sign fell onto the highway, according to the Oklahoma Highway Patrol. </p>
+				 <p><a class="btn btn-primary btn-md" href="https://www.accuweather.com/en/weather-news/photos-flooding-shuts-down-interstate-35-in-kansas-city-on-saturday-night/70002386" role="button">Read more</a></p>
+			</div>
+		</div>	
+		<div class="col-md-4">
+			<h3 class="text-center">NEWS 5</h3>
+			<div class="thumbnail">
+				<img src="images/news6.jpeg">
+				<p>The highest risk for flooding will be from Stuttgart and Munich southward into the Alps lasting into Tuesday night. There will also be a risk for mudslides in the higher terrain. </p>
+				 <p><a class="btn btn-primary btn-md" href="https://www.accuweather.com/en/weather-news/rounds-of-rain-to-continue-across-germany-this-week/70002403" role="button">Read more</a></p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h3 class="text-center">NEWS 6</h3>
+			<div class="thumbnail">
+				<img src="images/news7.jpeg">
+				<p>Portions of the Midwest may experience a shower or thunderstorm as early as Thursday."However, enough rain can fall to cause travel delays and a few incidents of urban flooding in this busy corridor," Sosnowski said. </p>
+				 <p><a class="btn btn-primary btn-md" href="https://www.accuweather.com/en/weather-news/rain-heavy-storms-to-drench-northeastern-us-into-monday-night/70002383" role="button">Read more</a></p>	
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Videos-->
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<h3 class="text-center">VIDEO 1</h3>
+			<div class="panel panel-primary">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="http://www.youtube.com/embed/ForiEeGBp28"></iframe>
+					</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h3 class="text-center">VIDEO 2</h3>
+			<div class="panel panel-primary">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="http://www.youtube.com/embed/ab6jV4VBWZE"></iframe>
+				</div>				
+			</div>			
+		</div>
+		<div class="col-md-4">
+			<h3 class="text-center">VIDEO 3</h3>
+			<div class="panel panel-primary">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="http://www.youtube.com/embed/ifrHogDujXw"></iframe>
+				</div>				
+			</div>			
+		</div>
+	</div>
+</div>
+<!--Footer-->
+<div class="container-fluid">
+	<footer >
+        <div class="text-center center-block">
+            <p>- AccurateWeather.com -</p>
+            <br/>
+            <a href="https://www.facebook.com/AccurateWeather"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+	        <a href="https://twitter.com/AccurateWeather"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+	        <a href="https://plus.google.com/+Accurate-Weather"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+	        <a href="mailto:AccurateWeather@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+			<p>Copyright 2017</p>
+		</div>
+	</footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+.menu{
+	opacity: 0.7;
+}
+.imgmain img{
+	height: 40%;
+	width: 100%;
+}
+
+.imgmain{
+	margin-top: 60px;
+}
+.sec{
+	margin-top: 3%;
+}
+.video{
+	
+	margin-top: 2%;
+}
+.weat img{
+	height: 100%;
+	width: 100%;
+}
+.temp{
+	margin-top: 3%;
+}
+footer{
+	background: black;
+	opacity: 0.7;
+}
+footer p{
+ 	color: white;
+}
+#social-fb:hover {
+     color: #3B5998;
+}
+#social-tw:hover {
+     color: #4099FF;
+}
+#social-gp:hover {
+     color: #d34836;
+}
+#social-em:hover {
+     color: #f39c12;
+}
+.jumb{
+ 	background-color: white;
+  	margin-top: 70px;
+}
+.jumb img{
+ 	height: 40%;
+ 	width: 100%;
+}
+.temp{
+	margin-top: 3%;
+}
